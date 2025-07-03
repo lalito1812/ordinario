@@ -2,22 +2,46 @@
 <html>
 <head>
     <title>Formulario</title>
-    <style>
-        #usuario {
-            color: blue;
-        }
-    </style>
 </head>
 <body>
-    <h2>Login</h2>
-    <form action="/login" method="POST">
-        <label for="usuario">Usuario</label><br>
-        <input id="usuario" style="text-align:center; color:#fff" type="text" name="usuario" placeholder="Escribe tu usuario"><br>
+    <h2>Formulario</h2>
+    <form action="/enviar" method="POST">
+        fecha = <input type="date" name="fecha"><br><br>
+        nombre = <input type="text" name="nombre"><br><br>
+        correo = <input type="email" name="correo"><br><br>
+        telefono = <input type="text" name="telefono"><br><br>
+        pin = <input type="text" name="pin"><br><br>
+        medio
+        <select name="medio">
+        <option value= 'Redes'>Redes</option>
+        <option value= 'Whatsapp'>Whatsapp</option>
+        <option value= 'Visita'>Visita</option>
+        <option value= 'Llamada'>Llamada</option>
+        </select>
+        equipo
+        <select name="equipo">
+        <option value= 'Iphone 16'>Iphone 16</option>
+        <option value= 'Iphone 16 e'>Iphone 16 e</option>
+        <option value= 'Iphone 16 Pro'>Iphone 16 Pro</option>
+        <option value= 'Iphone 16 Pro Max'>Iphone 16 Pro Max</option>
+        </select>
+        reparacion
+        <select name="reparacion">
+        <option value= 'Cambio de batería'>Cambio de batería</option>
+        <option value= 'Cambio de pantalla'>Cambio de pantalla</option>
+        <option value= 'Dictamen Técnico'>Dictamen Técnico</option>
+        <option value= 'Servicio de diagnóstico'>Servicio de diagnóstico</option>
+        </select>
+        estatus
+        <select name="estatus">
+        <option value= 'Se hizo seguimiento'>Se hizo seguimiento</option>
+        <option value= 'Consulta'>Consulta</option>
+        <option value= 'Dejó equipo'>Dejó equipo</option>
+        <option value= 'No quiso'>No quiso</option>
+        <option value= 'Encontró más barato'>Encontró más barato</option>
+        </select>
 
-        <label for="password">Contraseña</label><br>
-        <input type="password" name="password" placeholder="Contrasena"><br><br>
-
-        <button type="submit">Entrar</button>
+        <button type="submit">ENVIAR</button>
     </form>
-</body>
+    </body>
 </html>
